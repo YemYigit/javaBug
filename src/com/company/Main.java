@@ -27,8 +27,8 @@ public class Main {
             int y = x + 1;
             if (y < arLst.size()) {
                 System.out.println("o-o-o");
-                System.out.println("x: " + x + " value (x): " + arLst.get(x));
-                System.out.println("y: " + y + " value (y): " + arLst.get(y));
+                System.out.println("x: " + x + " - Type(Class):" + arLst.get(x).getClass().getSimpleName() + " - value (x): " + arLst.get(x));
+                System.out.println("y: " + y + " - Type(Class):" + arLst.get(y).getClass().getSimpleName() + " - value (y): " + arLst.get(y));
                 if (arLst.get(x) == arLst.get(y)) {
                     System.out.println("Removed: " + arLst.get(y));
                     arLst.remove(y);
