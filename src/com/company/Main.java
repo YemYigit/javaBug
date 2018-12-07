@@ -31,9 +31,9 @@ public class Main {
                 System.out.println("y: " + y + " value (y): " + arLst.get(y));
                 if (arLst.get(x) == arLst.get(y)) {
                     System.out.println("Removed: " + arLst.get(y));
-//                  values.remove(y);
+                    arLst.remove(y);
                     System.out.println("Size :" + arLst.size());
-//                  x--;
+                    x--;
                 }
             }
         }
