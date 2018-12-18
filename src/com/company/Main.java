@@ -12,8 +12,8 @@ public class Main {
     //region Preparation
     ArrayList<Integer> arLst = new ArrayList<>();
     Random rand = new Random();
-    rand.setSeed(1000);//getting same values every time
-    for (int i = 0; i < 100; i++) {//adding randomly 100 values to ArrayList
+//    rand.setSeed(1000);//getting same values every time
+    for (int i = 0; i < 50; i++) {//adding randomly 100 values to ArrayList
       int r = 100 + rand.nextInt() % 100;
       arLst.add(r);
     }
@@ -31,25 +31,28 @@ public class Main {
         System.out.println("y: " + y + " - Type(Class):" + arLst.get(y).getClass().getSimpleName() + " - value (y): " + arLst.get(y));
 
         //region Debug
-          //region ==
-          if(arLst.get(x) == arLst.get(y)){
-            System.out.println("Found with '=='");
-          }
-          //endregion
-          //region PreDefined Variables
-          if(arLst.get(x).equals(arLst.get(y))){
-            System.out.println("Found with '.equal()'");
-          }
-          //endregion
 
-          //region .equal()
-          int tempX, tempY;
-          tempX = arLst.get(x);
-          tempY = arLst.get(y);
-          if(tempX == tempY){
-            System.out.println("Found with Predefined Variables");
-          }
-          //endregion
+        //region ==
+        if (arLst.get(x) == arLst.get(y)) {
+          System.out.println("Found with '=='");
+        }
+        //endregion
+
+        //region PreDefined Variables
+        if (arLst.get(x).equals(arLst.get(y))) {
+          System.out.println("Found with '.equal()'");
+        }
+        //endregion
+
+        //region .equal()
+        int tempX, tempY;
+        tempX = arLst.get(x);
+        tempY = arLst.get(y);
+        if (tempX == tempY) {
+          System.out.println("Found with Predefined Variables");
+        }
+        //endregion
+
         //endregion
 
       }
